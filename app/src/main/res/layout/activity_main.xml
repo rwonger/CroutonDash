@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity"
+    android:configChanges="orientation|screenSize"
+    android:fontFamily="@font/quicksand_regular">
+
+    <TextView
+        android:id="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="-8dp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:text="00:00"
+        android:textColor="#ffffff"
+        android:textSize="164sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="172dp"
+        android:text="Monday, January 1"
+        android:textColor="#ffffff"
+        android:textSize="42sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/messageGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Good Morning,"
+        android:textColor="#ffffff"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/currentSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="344dp"
+        android:text="Partly Cloudy"
+        android:textColor="#ffffff"
+        android:textSize="42sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="232dp"
+        android:text="0°c"
+        android:textColor="#ffffff"
+        android:textSize="94sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cloudy" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="84dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/settings_button_background"
+        android:src="@drawable/gear_icon"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"  />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

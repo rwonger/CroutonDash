@@ -1,0 +1,5 @@
+<resources>
+    <string name="api_key">your_api_key</string>
+    <double lat='latitude'>your_latitude</double>
+    <double lon='longitude'>your_longitude</double>
+</resources>
